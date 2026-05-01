@@ -1,0 +1,17 @@
+# Session logs — contain real conversation data, do not publish
+session_*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

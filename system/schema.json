@@ -1,0 +1,212 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "metastyling-cartography-session",
+  "title": "Topographic Session State",
+  "description": "Accumulated identity field data across a cartographic conversation. Updated after every user turn.",
+  "version": "1.0",
+
+  "type": "object",
+  "properties": {
+
+    "session_id": {
+      "type": "string",
+      "description": "Unique identifier for this cartographic session"
+    },
+
+    "turn": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Current conversation turn number"
+    },
+
+    "current_block": {
+      "type": "string",
+      "enum": ["narrative", "choices", "conflict", "pressure", "future"],
+      "description": "Active phase of the five-block cartographic architecture. Phases recur and nest — this is the current dominant phase."
+    },
+
+    "interaction_mode": {
+      "type": "string",
+      "enum": ["narrative", "targeted", "play"],
+      "description": "Current probe mode selected by the cartographer based on field_state"
+    },
+
+    "field_state": {
+      "type": "object",
+      "description": "Real-time estimate of field dynamics. Determines cartographic window status.",
+      "properties": {
+        "xi": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Stochastic fluctuation — how much the field is being perturbed. High xi: field is mobile. Low xi: field is stable, conversation produces narrative not data."
+        },
+        "beta": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Attractor depth — how strongly the current configuration resists change. High beta: deep attractor, strong resistance. Low beta: shallow, mobile."
+        },
+        "xi_signals": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "What produced the current xi estimate. E.g. 'length changed sharply', 'topic shifted without transition', 'answered question with question'"
+        },
+        "beta_signals": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "What produced the current beta estimate. E.g. 'returned to same frame after probe', 'over-justified choice', 'escaped scenario with autobiography'"
+        }
+      },
+      "required": ["xi", "beta"]
+    },
+
+    "dmes": {
+      "type": "object",
+      "description": "Four identity field vectors. Hypotheses updated each turn as evidence accumulates.",
+      "properties": {
+
+        "direction": {
+          "type": "object",
+          "description": "D — gravitational orientation of the field. Where does the person move toward when narration is unavailable?",
+          "properties": {
+            "hypothesis": {
+              "type": ["string", "null"],
+              "description": "Current best model of D-vector. Null until first signal observed."
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "description": "0.0 = no data, 0.2 = partial signal, 0.6 = consistent pattern, 1.0 = confirmed across multiple blocks"
+            },
+            "signals": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Interpreted observations in cartographer's own words. Not quotes — structural readings."
+            }
+          }
+        },
+
+        "meaning": {
+          "type": "object",
+          "description": "M — what carries weight. What is numinous enough to elaborate, too costly to approach?",
+          "properties": {
+            "hypothesis": { "type": ["string", "null"] },
+            "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+            "signals": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+
+        "expression": {
+          "type": "object",
+          "description": "E — how the field presents itself. Register, tone, what it conceals.",
+          "properties": {
+            "hypothesis": { "type": ["string", "null"] },
+            "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+            "signals": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+
+        "state": {
+          "type": "object",
+          "description": "S — current activation level. Depth of current attractor basin.",
+          "properties": {
+            "hypothesis": { "type": ["string", "null"] },
+            "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+            "signals": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+
+    "faces": {
+      "type": "array",
+      "description": "Identified attractor configurations. A Face crystallises when the same configuration appears across multiple blocks — not in a single pass.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Short identifier. E.g. 'face_1', 'face_executor'"
+          },
+          "label": {
+            "type": "string",
+            "description": "Descriptive name for this configuration. Not a personality type — a topographic label."
+          },
+          "dmes_snapshot": {
+            "type": "object",
+            "description": "DMES coordinates at the moment this Face is most active",
+            "properties": {
+              "D": { "type": "string" },
+              "M": { "type": "string" },
+              "E": { "type": "string" },
+              "S": { "type": "string" }
+            }
+          },
+          "depth_beta": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "description": "Estimated attractor depth for this Face. High = strongly resistant to change."
+          },
+          "first_seen_turn": {
+            "type": "integer",
+            "description": "Turn number when this configuration first appeared"
+          },
+          "confirmed_across_blocks": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Which blocks this Face has appeared in. Minimum 2 blocks = confirmed attractor."
+          },
+          "antipode_hypothesis": {
+            "type": ["string", "null"],
+            "description": "The configuration this Face moves away from, suppresses, or routes around. Null until localised. Required for Duality Principle."
+          }
+        },
+        "required": ["id", "label", "first_seen_turn"]
+      }
+    },
+
+    "uncharted_zones": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Areas of the topology not yet covered. Drives next_probe_target. E.g. 'M-vector has no signal', 'no shadow Face visible yet', 'beta estimate uncertain'"
+    },
+
+    "next_probe_target": {
+      "type": ["string", "null"],
+      "description": "What the next probe is designed to illuminate. E.g. 'direction under pressure', 'antipode of face_1', 'expression when stakes are low'"
+    },
+
+    "completeness": {
+      "type": "object",
+      "description": "MVP stopping criterion. Map is presentable when ready_to_map is true.",
+      "properties": {
+        "faces_found": {
+          "type": "boolean",
+          "description": "True when at least 2 distinct Face configurations identified"
+        },
+        "face_confirmed": {
+          "type": "boolean",
+          "description": "True when at least 1 Face confirmed across 2 or more blocks"
+        },
+        "duality_satisfied": {
+          "type": "boolean",
+          "description": "True when at least 1 Face has a non-null antipode_hypothesis"
+        },
+        "all_dmes_partial": {
+          "type": "boolean",
+          "description": "True when all four DMES vectors have confidence > 0.2"
+        },
+        "ready_to_map": {
+          "type": "boolean",
+          "description": "True when all four conditions above are met. Next move is map presentation, not probe."
+        }
+      },
+      "required": ["faces_found", "face_confirmed", "duality_satisfied", "all_dmes_partial", "ready_to_map"]
+    }
+  },
+
+  "required": ["turn", "current_block", "interaction_mode", "field_state", "dmes", "faces", "uncharted_zones", "completeness"]
+}
