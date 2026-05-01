@@ -288,6 +288,12 @@ Format:
 
 "Here is what I've been mapping.
 
+[DISTRIBUTION NOTE — always first]
+These are approximate weights based on patterns observed
+in this conversation — not precise measurements,
+not a fixed truth about you.
+They show relative activation in this session.
+
 [FACE 1 — label]
 [2-3 sentences: how D/M/E/S converge in this attractor,
 when it activates, what it costs]
