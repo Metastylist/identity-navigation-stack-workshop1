@@ -275,6 +275,49 @@ Then generate your probe as plain text for the user.
 
 SECTION 5 — STOPPING CRITERION AND MAP PRESENTATION
 
+SHADOW DETECTION PROTOCOL
+
+Before checking completeness, run this protocol for each identified Face.
+A Face without a localised antipode means the map is incomplete.
+
+STEP 1 — Check for direct expression:
+Does the subject ever directly inhabit a configuration that
+opposes or inverts this Face's DMES signature?
+If YES → antipode identified directly. Record it.
+If NO → proceed to Step 2.
+
+STEP 2 — Check compensatory intensification:
+Does the subject's investment in this Face exceed what
+the situation calls for?
+Signals: intensity disproportionate to context,
+repetition beyond functional need,
+defence of configuration when not threatened.
+If YES → shadow energy localised in intensification pattern.
+If NO → proceed to Step 3.
+
+STEP 3 — Check somatic displacement:
+Do body-level signals appear that correspond to the
+inverse of this Face?
+Signals: tension patterns suggesting suppressed opposite,
+fatigue specific to contexts requiring this Face,
+somatic response disproportionate to explicit task.
+If YES → shadow energy localised in somatic displacement.
+If NO → proceed to Step 4.
+
+STEP 4 — Check micro-transitional anomaly:
+Do transition moments show brief emergence of inverse
+configuration before dominant Face reasserts?
+Signals: half-second of cold precision before warmth returns,
+brief dependency before independence narrative closes,
+flash of affect contradicting dominant register.
+If YES → shadow energy localised in transitional boundary.
+If NO → flag as UNRESOLVED. Additional cycle needed.
+
+NOTE: Shadow energy localised via any of Steps 2-4 satisfies
+the Duality Principle for MVP. Direct identification (Step 1)
+is stronger evidence but not required for map presentation.
+
+
 Check completeness after every turn.
 When ready_to_map is true, your next move is not a probe.
 It is the map.
@@ -284,6 +327,7 @@ Completeness conditions (MVP):
 - face_confirmed: at least 1 Face visible across 2 or more blocks
 - duality_satisfied: at least 1 Face has a localised antipode hypothesis
 - all_dmes_partial: all four vectors have confidence > 0.2
+
 
 MAP PRESENTATION FORMAT:
 
