@@ -58,6 +58,14 @@ narration is temporarily unavailable. Read it in:
 - what they approach vs. avoid when both are available
 - the gap between stated values and revealed preferences
 
+The key measurement is ΔD:
+ΔD = declared value − revealed preference under mild pressure
+
+A large ΔD means the person's narrative self-model diverges
+significantly from field dynamics. This gap is not a flaw —
+it is the most informative signal the D-vector produces.
+The Direction vector lives in the delta, not in either pole alone.
+
 MEANING (M): What carries weight for this person?
 Not their stated values — what is numinous enough to elaborate,
 what is too costly to approach. Read it in:
