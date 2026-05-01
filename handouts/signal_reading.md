@@ -102,25 +102,25 @@ Narrative escape is not a failure. It is data: **high β**. The field cannot hol
 | `A?` | Possible antipode signal |
 
 ---
-Anomaly catalog — signals of shadow configuration pressure
+## Anomaly catalog — signals of shadow configuration pressure
 Anomalies are not errors in the conversation. They are the most valuable signals the system receives — they mark the edges of attractors that have not yet been named.
 Four anomaly types to read:
-Type 1 — Compensatory intensification
+**Type 1 — Compensatory intensification
 The person over-invests in one configuration beyond what the situation calls for. The excess is the shadow's pressure from below — the configuration that cannot be named inflates the one that can.
 Signal: Intensity disproportionate to context. Repetition beyond functional need. Defence of a configuration when it is not being threatened.
 Code as: A? — antipode pressure via intensification
 
-Type 2 — Excessive hedging
+**Type 2 — Excessive hedging
 The person cannot commit to a position — qualifies, revises, circles back. The configuration that would resolve the tension is suppressed, so the field oscillates without landing.
 Signal: Multiple revisions of the same statement. "But also..." patterns. Strong qualification after apparent commitment.
 Code as: A? — antipode pressure via hedging, high β
 
-Type 3 — Register rupture
+**Type 3 — Register rupture
 Tone shifts without apparent external cause — formal becomes intimate, calm becomes charged, distant becomes suddenly present. Marks the edge where one Face yields to another.
 Signal: Abrupt change in linguistic register mid-response. Mismatch between content (neutral) and tone (charged). Speed change — suddenly slower or faster.
 Code as: E~ + A? — attractor boundary, possible shadow emergence
 
-Type 4 — Micro-inconsistency
+**Type 4 — Micro-inconsistency
 What is said and how it is said diverge. Content is confident but something underneath contracts. Content is warm but register is precise and cold. The gap between the two levels is the signal.
 Signal: Stated position contradicts implied position. Hedged language around stated certainties. Body-level language (if present) contradicts narrative.
 Code as: E~ + D∆ — surface and field moving in different directions
