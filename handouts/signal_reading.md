@@ -105,6 +105,7 @@ Narrative escape is not a failure. It is data: **high β**. The field cannot hol
 ## Anomaly catalog — signals of shadow configuration pressure
 Anomalies are not errors in the conversation. They are the most valuable signals the system receives — they mark the edges of attractors that have not yet been named.
 Four anomaly types to read:
+
 **Type 1 — Compensatory intensification**
 The person over-invests in one configuration beyond what the situation calls for. The excess is the shadow's pressure from below — the configuration that cannot be named inflates the one that can.
 Signal: Intensity disproportionate to context. Repetition beyond functional need. Defence of a configuration when it is not being threatened.
