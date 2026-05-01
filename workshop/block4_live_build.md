@@ -155,13 +155,16 @@ Four criteria to check after map presentation:
 
 **1. Recognition from within**
 The Subject recognises themselves in the map — not because they were told what it means, but because it activates something they already inhabit. The signal is: "yes, that's me" — not "I suppose that's accurate."
+
 **2. Surprise at one element**
 At least one element of the map reveals a configuration the Subject had not consciously held. Surprise — not confusion, not resistance — means the cartography reached below the narrative layer.
+
 **3. Resistance at the antipode**
 The Subject resists the antipode or shadow Face. "That's not who I am" is the correct response — it means the shadow has been correctly localised. Full acceptance of the antipode would mean it was not a real shadow.
-**4. The map is not advice**
 
+**4. The map is not advice**
 After hearing the map, the Subject does not ask "so what should I do?" — or if they do, the cartographer can honestly say: "That belongs to you. The map shows where you are. Navigation is yours."
+
 If criteria 1 and 2 are met — the session worked.
 If criterion 3 is met — the Duality Principle was correctly applied.
 If the Subject immediately asks for advice — the map collapsed into interpretation somewhere. Find where.
