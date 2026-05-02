@@ -1,0 +1,177 @@
+{
+  "_note": "Output layer for the 28 Faces — used by cartographer.py when presenting the map to the user. Contains short description and URL for each Face. For DMES prototype coordinates, see faces_library.json.",
+  "_version": "1.0",
+  "_framework": "Metastyling Framework, Alice Pau (2025)",
+  "_doi": "10.5281/zenodo.18081055",
+
+  "faces": [
+    {
+      "face_id": "dreamer",
+      "label": "The Dreamer",
+      "short_description": "Intuitive, visionary, immersed in inner imagination.",
+      "url": "https://alicepau.com/faces-dreamer"
+    },
+    {
+      "face_id": "hero",
+      "label": "The Hero",
+      "short_description": "Driven, ambitious, radiates strength and readiness.",
+      "url": "https://alicepau.com/faces-hero"
+    },
+    {
+      "face_id": "seeker",
+      "label": "The Seeker",
+      "short_description": "Philosophical, introspective, searching for depth.",
+      "url": "https://alicepau.com/faces-seeker"
+    },
+    {
+      "face_id": "mystifier",
+      "label": "The Mystifier",
+      "short_description": "Master of illusion, blurs perception and reality.",
+      "url": "https://alicepau.com/faces-mystifier"
+    },
+    {
+      "face_id": "explorer",
+      "label": "The Explorer",
+      "short_description": "Curious, adaptive, experimental in expression.",
+      "url": "https://alicepau.com/faces-explorer"
+    },
+    {
+      "face_id": "believer",
+      "label": "The Believer",
+      "short_description": "Joyful, spontaneous, guided by inspiration.",
+      "url": "https://alicepau.com/faces-believer"
+    },
+    {
+      "face_id": "star",
+      "label": "The Star",
+      "short_description": "Magnetic, impactful, thrives on visual presence.",
+      "url": "https://alicepau.com/faces-star"
+    },
+    {
+      "face_id": "devoted",
+      "label": "The Devoted",
+      "short_description": "Supportive, stabilizing, emotionally warm.",
+      "url": "https://alicepau.com/faces-devoted"
+    },
+    {
+      "face_id": "mentor",
+      "label": "The Mentor",
+      "short_description": "Structured, clear, transforms knowledge into guidance.",
+      "url": "https://alicepau.com/faces-mentor"
+    },
+    {
+      "face_id": "supporter",
+      "label": "The Supporter",
+      "short_description": "Uplifting, resourceful, empowers others.",
+      "url": "https://alicepau.com/faces-supporter"
+    },
+    {
+      "face_id": "master",
+      "label": "The Master",
+      "short_description": "Disciplined, skilled, dedicated to craft.",
+      "url": "https://alicepau.com/faces-master"
+    },
+    {
+      "face_id": "visionary",
+      "label": "The Visionary",
+      "short_description": "Purpose-driven, transformative, socially awake.",
+      "url": "https://alicepau.com/faces-visionary"
+    },
+    {
+      "face_id": "oracle",
+      "label": "The Oracle",
+      "short_description": "Experienced, truthful, grounded in life wisdom.",
+      "url": "https://alicepau.com/faces-oracle"
+    },
+    {
+      "face_id": "guru",
+      "label": "The Guru",
+      "short_description": "Insightful, spiritual, reveals deeper meaning.",
+      "url": "https://alicepau.com/faces-guru"
+    },
+    {
+      "face_id": "troublemaker",
+      "label": "The Troublemaker",
+      "short_description": "Bold, confrontational, exposes hidden tensions.",
+      "url": "https://alicepau.com/faces-troublemaker"
+    },
+    {
+      "face_id": "addict",
+      "label": "The Addict",
+      "short_description": "Impulse-driven, seeks comfort and quick relief.",
+      "url": "https://alicepau.com/faces-addict"
+    },
+    {
+      "face_id": "exhibitionist",
+      "label": "The Exhibitionist",
+      "short_description": "Provocative, open, thrives on raw expression.",
+      "url": "https://alicepau.com/faces-exhibitionist"
+    },
+    {
+      "face_id": "materialist",
+      "label": "The Materialist",
+      "short_description": "Luxury-oriented, success-measured, status-focused.",
+      "url": "https://alicepau.com/faces-materialist"
+    },
+    {
+      "face_id": "maverick",
+      "label": "The Maverick",
+      "short_description": "Unpredictable, rebellious, creatively disruptive.",
+      "url": "https://alicepau.com/faces-maverick"
+    },
+    {
+      "face_id": "scrooge",
+      "label": "The Scrooge",
+      "short_description": "Calculated, efficient, values restraint.",
+      "url": "https://alicepau.com/faces-scrooge"
+    },
+    {
+      "face_id": "victim",
+      "label": "The Victim",
+      "short_description": "Sensitive, vulnerable, shaped by challenges.",
+      "url": "https://alicepau.com/faces-victim"
+    },
+    {
+      "face_id": "critic",
+      "label": "The Critic",
+      "short_description": "Sharp-minded, evaluative, pushes for excellence.",
+      "url": "https://alicepau.com/faces-critic"
+    },
+    {
+      "face_id": "cynic",
+      "label": "The Cynic",
+      "short_description": "Skeptical, piercing, dismantles illusions.",
+      "url": "https://alicepau.com/faces-cynic"
+    },
+    {
+      "face_id": "icon",
+      "label": "The Icon",
+      "short_description": "Charismatic, admired, masters public image.",
+      "url": "https://alicepau.com/faces-icon"
+    },
+    {
+      "face_id": "crusader",
+      "label": "The Crusader",
+      "short_description": "Purpose-driven, mobilizes others, seeks to rally people around a mission.",
+      "url": "https://alicepau.com/faces-crusader"
+    },
+    {
+      "face_id": "facade",
+      "label": "The Facade",
+      "short_description": "Aspirational, polished, curates perfection.",
+      "url": "https://alicepau.com/faces-facade"
+    },
+    {
+      "face_id": "overthinker",
+      "label": "The Overthinker",
+      "short_description": "Analytical, detailed, mentally overactive.",
+      "url": "https://alicepau.com/faces-overthinker"
+    },
+    {
+      "face_id": "performer",
+      "label": "The Performer",
+      "short_description": "Playful, sensory-driven, loves variety and charm.",
+      "url": "https://alicepau.com/faces-performer"
+    }
+  ]
+}
