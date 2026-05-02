@@ -1,0 +1,346 @@
+{
+  "_note": "Prototype DMES coordinates represent typical attractor configurations — reference points, not fixed categories. The 28 Faces function as topographic landmarks covering the identity field space. A real configuration will always sit somewhere between landmarks — closer to one, with gravitational pull toward another. Proximity matching is the correct operation: a configuration at 0.65 similarity to The Dreamer and 0.55 to The Seeker is valid and informative. Exact match to a single Face is rare and not the goal.",
+  "_version": "1.0",
+  "_framework": "Metastyling Framework, Alice Pau (2025)",
+  "_doi": "10.5281/zenodo.18081055",
+  "_matching": "Match is computed as proximity to prototype, not identity. Threshold 0.6 = candidate Face. Threshold 0.8 = confirmed Face.",
+
+  "faces": [
+    {
+      "face_id": "dreamer",
+      "label": "The Dreamer",
+      "prototype_dmes": {
+        "D": "moves toward inner imagination and possibility — away from constraint and fixed reality",
+        "M": "vision and potential carry highest weight; the not-yet-real is more numinous than the actual",
+        "E": "presents through imagery, metaphor, indirect language; resists concrete framing",
+        "S": "high internal activation, low external engagement; energy concentrated inward"
+      },
+      "typical_antipode": "the Master",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "hero",
+      "label": "The Hero",
+      "prototype_dmes": {
+        "D": "moves toward challenge, achievement, and proving capability under pressure",
+        "M": "strength, overcoming, and impact carry highest weight; weakness is existentially costly",
+        "E": "presents through confidence, decisiveness, forward-facing energy; avoids uncertainty signals",
+        "S": "high arousal baseline; activated by resistance; depleted by passivity"
+      },
+      "typical_antipode": "the Victim",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "seeker",
+      "label": "The Seeker",
+      "prototype_dmes": {
+        "D": "moves toward depth, meaning, and unresolved questions — away from premature closure",
+        "M": "truth and understanding carry highest weight; certainty is suspect",
+        "E": "presents through questions, qualifications, philosophical register; resists definitive statements",
+        "S": "sustained low-level tension from unresolved inquiry; calmed by complexity, not resolution"
+      },
+      "typical_antipode": "the Believer",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "mystifier",
+      "label": "The Mystifier",
+      "prototype_dmes": {
+        "D": "moves toward ambiguity, concealment, and control of perception",
+        "M": "mystery and indirection carry highest weight; transparency is a form of vulnerability",
+        "E": "presents through layered signals; register deliberately obscures as much as it reveals",
+        "S": "stable when field is partially hidden; destabilised by full exposure or direct confrontation"
+      },
+      "typical_antipode": "the Exhibitionist",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "explorer",
+      "label": "The Explorer",
+      "prototype_dmes": {
+        "D": "moves toward novelty, experiment, and adaptive movement — away from fixed structure",
+        "M": "discovery and variety carry highest weight; repetition signals stagnation",
+        "E": "presents through curiosity, openness, informal register; resists categorical framing",
+        "S": "energised by new input; fatigued by routine; fluctuation is comfortable baseline"
+      },
+      "typical_antipode": "the Master",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "believer",
+      "label": "The Believer",
+      "prototype_dmes": {
+        "D": "moves toward inspiration, joy, and alignment with guiding faith or principle",
+        "M": "meaning is received, not constructed; revelation and spontaneous knowing carry highest weight",
+        "E": "presents through warmth, enthusiasm, light register; doubt is compressed or absent",
+        "S": "high positive activation when aligned; rapid destabilisation when inspiration fails"
+      },
+      "typical_antipode": "the Seeker",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "star",
+      "label": "The Star",
+      "prototype_dmes": {
+        "D": "moves toward visibility, impact, and magnetic presence in social field",
+        "M": "being seen and remembered carries highest weight; invisibility is existentially threatening",
+        "E": "presents through visual and performative register; high attention to impression management",
+        "S": "activated by audience; depleted by absence of witness"
+      },
+      "typical_antipode": "the Scrooge",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "devoted",
+      "label": "The Devoted",
+      "prototype_dmes": {
+        "D": "moves toward supporting, stabilising, and sustaining others",
+        "M": "connection, loyalty, and care carry highest weight; abandonment is existentially costly",
+        "E": "presents through warmth, availability, emotional attunement; own needs compressed",
+        "S": "stable when relational field is secure; activated by others' distress"
+      },
+      "typical_antipode": "the Maverick",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "mentor",
+      "label": "The Mentor",
+      "prototype_dmes": {
+        "D": "moves toward structuring knowledge and enabling others' development",
+        "M": "understanding and transmission carry highest weight; mastery in service of others",
+        "E": "presents through clarity, structured register, pedagogical framing",
+        "S": "activated by teachable moments; fatigued by contexts where transmission is impossible"
+      },
+      "typical_antipode": "the Troublemaker",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "supporter",
+      "label": "The Supporter",
+      "prototype_dmes": {
+        "D": "moves toward empowering others and resourcing collective capability",
+        "M": "uplift and enablement carry highest weight; own achievement secondary to others'",
+        "E": "presents through encouragement, practical register, other-focused language",
+        "S": "stable in supporting role; destabilised when placed in centre"
+      },
+      "typical_antipode": "the Star",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "master",
+      "label": "The Master",
+      "prototype_dmes": {
+        "D": "moves toward craft, discipline, and depth of skill",
+        "M": "excellence and dedication carry highest weight; shortcuts are existentially costly",
+        "E": "presents through precision, economy of expression, understated register",
+        "S": "stable in practice; activated by challenge to craft; fatigued by context requiring breadth over depth"
+      },
+      "typical_antipode": "the Explorer",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "visionary",
+      "label": "The Visionary",
+      "prototype_dmes": {
+        "D": "moves toward systemic transformation and social awakening",
+        "M": "purpose and collective impact carry highest weight; incremental change is insufficient",
+        "E": "presents through mission-oriented register, future-facing language, moral framing",
+        "S": "high activation when aligned with purpose; deep fatigue when purpose is blocked"
+      },
+      "typical_antipode": "the Materialist",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "oracle",
+      "label": "The Oracle",
+      "prototype_dmes": {
+        "D": "moves toward truth-telling grounded in accumulated experience",
+        "M": "wisdom and long view carry highest weight; short-term thinking is suspect",
+        "E": "presents through measured, grounded register; speaks with weight not volume",
+        "S": "stable at high β; rarely destabilised; slow to activate but deep when activated"
+      },
+      "typical_antipode": "the Dreamer",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "guru",
+      "label": "The Guru",
+      "prototype_dmes": {
+        "D": "moves toward spiritual depth and revelation of hidden meaning",
+        "M": "transcendence and inner knowing carry highest weight; surface reality is insufficient",
+        "E": "presents through paradox, elevated register, silence as communication",
+        "S": "activated by depth encounter; closed to purely instrumental contexts"
+      },
+      "typical_antipode": "the Materialist",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "troublemaker",
+      "label": "The Troublemaker",
+      "prototype_dmes": {
+        "D": "moves toward disruption, exposure, and confrontation of hidden tension",
+        "M": "truth through rupture carries highest weight; comfort is suspect",
+        "E": "presents through provocation, direct register, deliberate friction",
+        "S": "energised by resistance and confrontation; fatigued by harmony that requires suppression"
+      },
+      "typical_antipode": "the Devoted",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "addict",
+      "label": "The Addict",
+      "prototype_dmes": {
+        "D": "moves toward immediate relief, comfort, and escape from discomfort",
+        "M": "relief and release carry highest weight; long-term cost is compressed",
+        "E": "presents through impulse-driven register; justification follows action, not precedes",
+        "S": "high instability; activated by discomfort; rapid cycling between states"
+      },
+      "typical_antipode": "the Master",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "exhibitionist",
+      "label": "The Exhibitionist",
+      "prototype_dmes": {
+        "D": "moves toward raw expression and full exposure — away from concealment",
+        "M": "authenticity through visibility carries highest weight; privacy feels like suppression",
+        "E": "presents through provocative, unfiltered register; boundary between self and display is thin",
+        "S": "activated by exposure; contracted by social constraint"
+      },
+      "typical_antipode": "the Mystifier",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "materialist",
+      "label": "The Materialist",
+      "prototype_dmes": {
+        "D": "moves toward status, acquisition, and measurable success markers",
+        "M": "luxury and achievement carry highest weight; success is externally validated",
+        "E": "presents through status-conscious register; material signals as identity language",
+        "S": "stable when markers of success are visible; destabilised by perceived inadequacy"
+      },
+      "typical_antipode": "the Visionary",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "maverick",
+      "label": "The Maverick",
+      "prototype_dmes": {
+        "D": "moves toward unpredictability, rule-breaking, and creative disruption",
+        "M": "originality and refusal of convention carry highest weight; conformity is existentially threatening",
+        "E": "presents through unexpected register shifts, irreverence, deliberate incoherence",
+        "S": "energised by chaos; contracted by structure"
+      },
+      "typical_antipode": "the Devoted",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "scrooge",
+      "label": "The Scrooge",
+      "prototype_dmes": {
+        "D": "moves toward restraint, efficiency, and conservation of resource",
+        "M": "control and sufficiency carry highest weight; excess is threatening",
+        "E": "presents through minimal register; economy of expression matches economy of action",
+        "S": "stable when resources are controlled; activated by perceived waste or demand"
+      },
+      "typical_antipode": "the Star",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "victim",
+      "label": "The Victim",
+      "prototype_dmes": {
+        "D": "moves toward situations confirming powerlessness and external causation",
+        "M": "suffering and injustice carry highest weight; agency is compressed or absent",
+        "E": "presents through appeal to witness, vulnerable register, narrative of external determination",
+        "S": "chronic low energy; collapse under pressure; activated by perceived threat or injustice"
+      },
+      "typical_antipode": "the Hero",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "critic",
+      "label": "The Critic",
+      "prototype_dmes": {
+        "D": "moves toward evaluation, refinement, and pursuit of excellence through identification of failure",
+        "M": "quality and rigour carry highest weight; mediocrity is existentially intolerable",
+        "E": "presents through precise, evaluative register; approval is rare and specific",
+        "S": "activated by gap between actual and possible; fatigued by contexts requiring acceptance"
+      },
+      "typical_antipode": "the Believer",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "cynic",
+      "label": "The Cynic",
+      "prototype_dmes": {
+        "D": "moves toward dismantling illusion and exposing the gap between claim and reality",
+        "M": "truth through negation carries highest weight; optimism is suspect",
+        "E": "presents through ironic, piercing register; warmth is compressed or absent",
+        "S": "stable at distance; contracted by proximity and demand for positive investment"
+      },
+      "typical_antipode": "the Believer",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "icon",
+      "label": "The Icon",
+      "prototype_dmes": {
+        "D": "moves toward cultural impact, admiration, and mastery of public image",
+        "M": "legacy and symbolic power carry highest weight; private self is secondary to public configuration",
+        "E": "presents through highly managed register; charisma as deliberate instrument",
+        "S": "stable when image is coherent; deeply destabilised by exposure of private configuration"
+      },
+      "typical_antipode": "the Exhibitionist",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "crusader",
+      "label": "The Crusader",
+      "prototype_dmes": {
+        "D": "moves toward mobilising others around a mission and collective action",
+        "M": "cause and solidarity carry highest weight; individual success without collective impact is hollow",
+        "E": "presents through rallying register, moral urgency, we-language",
+        "S": "activated by injustice and collective challenge; depleted by isolation or institutional obstruction"
+      },
+      "typical_antipode": "the Scrooge",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "facade",
+      "label": "The Facade",
+      "prototype_dmes": {
+        "D": "moves toward curated perfection and aspirational self-presentation",
+        "M": "appearance of success and polish carry highest weight; gap between image and reality is existentially threatening",
+        "E": "presents through highly controlled, aspirational register; vulnerability is never unmanaged",
+        "S": "stable when image holds; rapid destabilisation when gap is exposed"
+      },
+      "typical_antipode": "the Exhibitionist",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "overthinker",
+      "label": "The Overthinker",
+      "prototype_dmes": {
+        "D": "moves toward analysis, detail, and mental processing — away from action and ambiguity",
+        "M": "certainty through understanding carries highest weight; unanalysed territory is threatening",
+        "E": "presents through dense, qualified register; multiple caveats before commitment",
+        "S": "high mental activation; chronic low-level anxiety; fatigued by contexts requiring rapid action"
+      },
+      "typical_antipode": "the Maverick",
+      "matching_threshold": 0.6
+    },
+    {
+      "face_id": "performer",
+      "label": "The Performer",
+      "prototype_dmes": {
+        "D": "moves toward play, variety, sensory engagement, and charm",
+        "M": "delight and connection through performance carry highest weight; seriousness is a costume",
+        "E": "presents through fluid, playful register; shifts easily between modes as audience requires",
+        "S": "energised by engagement and response; fatigued by sustained seriousness or emotional weight"
+      },
+      "typical_antipode": "the Oracle",
+      "matching_threshold": 0.6
+    }
+  ]
+}
